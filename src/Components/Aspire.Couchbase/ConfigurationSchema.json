@@ -1,0 +1,48 @@
+{
+  "definitions": {
+    "logLevel": {
+      "properties": {
+        "Couchbase": {
+          "$ref": "#/definitions/logLevelThreshold"
+        },
+        "Couchbase.Connection": {
+          "$ref": "#/definitions/logLevelThreshold"
+        },
+        "Couchbase.Internal": {
+          "$ref": "#/definitions/logLevelThreshold"
+        }
+      }
+    }
+  },
+  "properties": {
+    "Aspire": {
+      "type": "object",
+      "properties": {
+        "Couchbase": {
+          "type": "object",
+          "properties": {
+            "ConnectionString": {
+              "type": "string",
+              "description": "Gets or sets the connection string of the Couchbase server to connect to."
+            },
+            "DisableHealthChecks": {
+              "type": "boolean",
+              "description": "Gets or sets a boolean value that indicates whether the Couchbase health check is disabled or not.",
+              "default": false
+            },
+            "DisableTracing": {
+              "type": "boolean",
+              "description": "Gets or sets a boolean value that indicates whether the OpenTelemetry tracing is disabled or not.",
+              "default": false
+            },
+            "HealthCheckTimeout": {
+              "type": "integer",
+              "description": "Gets or sets a integer value that indicates the Couchbase health check timeout in milliseconds."
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "object"
+}

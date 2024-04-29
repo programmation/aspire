@@ -89,6 +89,8 @@
     <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="$(MicrosoftExtensionsHttpResiliencePackageVersion)" />
     <!-- external dependencies -->
     <PackageVersion Include="Confluent.Kafka" Version="2.3.0" />
+    <PackageVersion Include="Couchbase.Extensions.DependencyInjection" Version="3.5.1" />
+    <PackageVersion Include="CouchbaseNetClient" Version="3.5.1" />
     <PackageVersion Include="Dapper" Version="2.1.37" />
     <PackageVersion Include="DnsClient" Version="1.7.0" />
     <PackageVersion Include="Google.Protobuf" Version="3.26.1" />
@@ -142,6 +144,7 @@
     <PackageVersion Include="Microsoft.Extensions.Diagnostics.Testing" Version="$(MicrosoftExtensionsDiagnosticsTestingPackageVersion)" />
     <PackageVersion Include="Microsoft.NET.Runtime.WorkloadTesting.Internal" Version="$(MicrosoftNETRuntimeWorkloadTestingInternalVersion)" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageVersion Include="Testcontainers.Couchbase" Version="$(TestcontainersPackageVersion)" />
     <PackageVersion Include="Testcontainers.MongoDb" Version="$(TestcontainersPackageVersion)" />
     <PackageVersion Include="Testcontainers.MsSql" Version="$(TestcontainersPackageVersion)" />
     <PackageVersion Include="Testcontainers.MySql" Version="$(TestcontainersPackageVersion)" />

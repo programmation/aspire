@@ -1,0 +1,23 @@
+#nullable enable
+Aspire.Couchbase.ICouchbaseClient
+Aspire.Couchbase.ICouchbaseClient.ClusterOptions.get -> Couchbase.ClusterOptions!
+Aspire.Couchbase.ICouchbaseClient.Cluster.get -> Couchbase.Cluster?
+Aspire.Couchbase.ICouchbaseClient.ListBuckets(System.Threading.CancellationToken cancellationToken) -> System.Collections.Generic.Dictionary<string!, Couchbase.Management.Buckets.BucketSettings!>?
+Aspire.Couchbase.CouchbaseClient
+Aspire.Couchbase.CouchbaseClient.CouchbaseClient(Couchbase.ClusterOptions! clusterOptions) -> void
+Aspire.Couchbase.CouchbaseClient.ClusterOptions.get -> Couchbase.ClusterOptions!
+Aspire.Couchbase.CouchbaseClient.Cluster.get -> Couchbase.Cluster?
+Aspire.Couchbase.CouchbaseClient.ListBuckets(System.Threading.CancellationToken cancellationToken) -> System.Collections.Generic.Dictionary<string!, Couchbase.Management.Buckets.BucketSettings!>?
+Aspire.Couchbase.CouchbaseSettings
+Aspire.Couchbase.CouchbaseSettings.ConnectionString.get -> string?
+Aspire.Couchbase.CouchbaseSettings.ConnectionString.set -> void
+Aspire.Couchbase.CouchbaseSettings.DisableHealthChecks.get -> bool
+Aspire.Couchbase.CouchbaseSettings.DisableHealthChecks.set -> void
+Aspire.Couchbase.CouchbaseSettings.HealthCheckTimeout.get -> int?
+Aspire.Couchbase.CouchbaseSettings.HealthCheckTimeout.set -> void
+Aspire.Couchbase.CouchbaseSettings.CouchbaseSettings() -> void
+Aspire.Couchbase.CouchbaseSettings.DisableTracing.get -> bool
+Aspire.Couchbase.CouchbaseSettings.DisableTracing.set -> void
+Microsoft.Extensions.Hosting.AspireCouchbaseExtensions
+static Microsoft.Extensions.Hosting.AspireCouchbaseExtensions.AddKeyedCouchbaseClient(this Microsoft.Extensions.Hosting.IHostApplicationBuilder! builder, string! name, System.Action<Aspire.Couchbase.CouchbaseSettings!>? configureSettings = null, System.Action<Couchbase.ClusterOptions!>? configureClusterOptions = null) -> void
+static Microsoft.Extensions.Hosting.AspireCouchbaseExtensions.AddCouchbaseClient(this Microsoft.Extensions.Hosting.IHostApplicationBuilder! builder, string! connectionName, System.Action<Aspire.Couchbase.CouchbaseSettings!>? configureSettings = null, System.Action<Couchbase.ClusterOptions!>? configureClusterOptions = null) -> void

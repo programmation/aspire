@@ -1,0 +1,6 @@
+@Couchbase.ApiService_HostAddress = http://localhost:5125
+
+GET {{Couchbase.ApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
